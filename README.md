@@ -55,6 +55,36 @@ CSV Reports and Visualisations
 
 ## Detection Experiments
 
+
+## Example Analytics Output
+
+The following visualisations were generated from a 10-second CS2 gameplay segment processed at 30 FPS using YOLO11n V1 and ByteTrack.
+
+### Player Visibility Timeline
+
+![Player Visibility](examples/player_visibility.png)
+
+Shows the percentage of video frames containing at least one tracked detection for each second.
+
+### Detection Activity
+
+![Detection Activity](examples/detection_activity.png)
+
+Compares the total detection observations with observations assigned tracking IDs.
+
+### Track Duration Analysis
+
+![Track Durations](examples/track_durations.png)
+
+Compares the observed duration of each tracking ID. The longest uninterrupted track lasted 120 consecutive frames (4 seconds).
+
+### CSV Reports
+
+- [Per-second analytics](examples/per_second_analytics_v1.csv)
+- [Track-level analytics](examples/track_analytics_v1.csv)
+
+**Interpretation:** These are prototype tracking statistics, not verified player identity or gameplay-event metrics. Short-lived tracks may represent duplicate or incorrect detections.
+
 Five YOLO11n experiments were trained using manually annotated gameplay frames.
 
 The experiments explored the effects of different training examples, including distant players and negative background scenes.
