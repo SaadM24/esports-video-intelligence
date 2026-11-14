@@ -1,0 +1,59 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# IDE / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw and processed gameplay recordings
+data/raw/
+data/processed/
+data/annotations/
+data/splits/
+
+# Model files and checkpoints
+*.pt
+*.pth
+*.onnx
+*.engine
+models/pretrained/
+models/trained/
+
+# Experiment outputs
+runs/
+outputs/
+
+# Generated media
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Ultralytics cache files
+*.cache
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Temporary files and logs
+*.log
+*.tmp
